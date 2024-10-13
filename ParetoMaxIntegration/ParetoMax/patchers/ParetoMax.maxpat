@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 4,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 461.0, 123.0, 477.0, 639.0 ],
+		"rect" : [ 186.0, 123.0, 1148.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 282.0, 457.0, 395.0, 49.0 ],
+					"text" : "deviceId ac233faf5c26 deviceIdType 2 timestamp 1728852890259. batteryPercentage 100 acceleration \"-0.88671875 -0.3671875 0.02734375\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "All dynamb values, in format name1 value1 name2 value2 etc",
 					"id" : "obj-18",
@@ -118,8 +131,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 114.0, 386.0, 395.0, 22.0 ],
-					"text" : "c300000b2bb2 3 isLiquidDetected false"
+					"patching_rect" : [ 51.0, 397.0, 395.0, 22.0 ],
+					"text" : "ac233faf5c26 2 acceleration \"-0.88671875 -0.3671875 0.02734375\""
 				}
 
 			}
@@ -147,7 +160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.0, 340.0, 606.0, 22.0 ]
+					"patching_rect" : [ 309.0, 516.0, 606.0, 22.0 ]
 				}
 
 			}
@@ -207,7 +220,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -7.0, 340.0, 249.0, 22.0 ],
-					"text" : "0554202c6387 3 -64"
+					"text" : "e0c34543ed88 3 -75"
 				}
 
 			}
@@ -322,6 +335,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
 					"source" : [ "obj-15", 2 ]
 				}
 
@@ -330,6 +344,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"order" : 0,
+					"source" : [ "obj-15", 2 ]
 				}
 
 			}
@@ -401,7 +423,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "parsePareto.js",
-				"bootpath" : "~/Documents/htdocs/ParetoArtistIntegrations/ParetoMaxIntegration/ParetoMax/code",
+				"bootpath" : "~/Documents/htdocs/paretoArtistIntegrations/ParetoMaxIntegration/ParetoMax/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
