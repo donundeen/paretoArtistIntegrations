@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 186.0, 123.0, 1148.0, 639.0 ],
+		"rect" : [ 331.0, 97.0, 1148.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.0, 457.0, 395.0, 49.0 ],
-					"text" : "deviceId ac233faf5c26 deviceIdType 2 timestamp 1728852890259. batteryPercentage 100 acceleration \"-0.88671875 -0.3671875 0.02734375\""
+					"patching_rect" : [ 282.0, 457.0, 395.0, 35.0 ],
+					"text" : "deviceId c300000b2bb2 deviceIdType 3 timestamp 1729108649455. batteryPercentage 100 isLiquidDetected false"
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.0, 397.0, 395.0, 22.0 ],
-					"text" : "ac233faf5c26 2 acceleration \"-0.88671875 -0.3671875 0.02734375\""
+					"text" : "c300000b2bb2 3 isLiquidDetected false"
 				}
 
 			}
@@ -219,8 +219,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -7.0, 340.0, 249.0, 22.0 ],
-					"text" : "e0c34543ed88 3 -75"
+					"patching_rect" : [ 31.0, 334.0, 249.0, 22.0 ],
+					"text" : "dedeffbeda97 3 -80"
 				}
 
 			}
