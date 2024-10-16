@@ -41,11 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-7",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 260.0, 187.0, 50.0, 22.0 ]
+					"patching_rect" : [ 260.0, 187.0, 348.0, 49.0 ],
+					"text" : "deviceId c300000ae8da deviceIdType 3 timestamp 1729112260032. batteryPercentage 100 illuminance 0 temperature 21.5 relativeHumidity 42.988281"
 				}
 
 			}
@@ -63,13 +65,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.0, 213.0, 50.0, 49.0 ],
-					"text" : "18f4438fd40a 3 -66"
+					"patching_rect" : [ 32.0, 155.0, 304.0, 22.0 ],
+					"text" : "f749affc366e 3 -66"
 				}
 
 			}
