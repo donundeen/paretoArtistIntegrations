@@ -1,12 +1,10 @@
+s.boot;
 (
-    var n = 8;
-    {
-        Mix.fill(n, { arg index;
-            var freq;
-            index.postln;
-            freq = 440 + index;
-            freq.postln;
-            SinOsc.ar(freq , 0, 1 / n)
-        })
-    }.play;
+SynthDef.new("tutorial-args", { arg freq = 440, out = 0;
+    Out.ar(out, SinOsc.ar(freq, 0, 0.2));
+}).play;
 )
+s.scope; // scope so you can see the effect
+x = Synth.new("tutorial-args");
+x.set("freq", 660);
+x.set("freq", 880, "out", 1);
